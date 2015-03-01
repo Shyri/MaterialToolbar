@@ -1,4 +1,4 @@
-package com.shyri.materialtoolbar;
+package es.shyri.materialtoolbar;
 
 import android.content.Context;
 import android.support.v7.app.ActionBarActivity;

@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
 
 android {
     compileSdkVersion 21
@@ -14,6 +15,20 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: 'file://C:/Users/Shyri/Documents/git/KF/kf-mvn')
+            pom.groupId = 'es.shyri'
+            pom.artifactId = 'materialtoolbar'
+            pom.version = '0.0.1'
+            pom.packaging = 'aar'
+            pom.name = 'materialtoolbar'
         }
     }
 }

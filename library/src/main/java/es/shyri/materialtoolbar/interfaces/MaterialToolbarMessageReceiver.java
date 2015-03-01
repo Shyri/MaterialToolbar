@@ -1,4 +1,4 @@
-package com.shyri.materialtoolbar.interfaces;
+package es.shyri.materialtoolbar.interfaces;
 
 /**
  * Created by Shyri on 27/02/2015.

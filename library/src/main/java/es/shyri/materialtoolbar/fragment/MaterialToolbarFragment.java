@@ -1,4 +1,4 @@
-package com.shyri.materialtoolbar.fragment;
+package es.shyri.materialtoolbar.fragment;
 
 import android.app.Fragment;
 import android.content.Context;
