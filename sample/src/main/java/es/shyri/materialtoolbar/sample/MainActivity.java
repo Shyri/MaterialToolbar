@@ -1,17 +1,25 @@
 package es.shyri.materialtoolbar.sample;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import es.shyri.materialtoolbar.MaterialToolbar;
+import es.shyri.materialtoolbar.activity.MaterialToolbarActivity;
+import es.shyri.materialtoolbar.sample.fragment.FragmentOne;
 
-public class MainActivity extends ActionBarActivity {
+
+public class MainActivity extends MaterialToolbarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setMaterialToolbar((MaterialToolbar) findViewById(R.id.main_toolbar));
+
+        navigateTo(new FragmentOne());
     }
 
 
@@ -35,5 +43,14 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    private void navigateTo(Fragment fragment){
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        ft.replace(R.id.mainFragment, fragment); // f1_container is your FrameLayout container
+        ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+        ft.addToBackStack(null);
+        ft.commit();
     }
 }

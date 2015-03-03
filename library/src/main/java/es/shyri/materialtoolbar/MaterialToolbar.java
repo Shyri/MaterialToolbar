@@ -5,13 +5,14 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 
-import com.shyri.materialtoolbar.interfaces.MaterialToolbarMessageReceiver;
+import es.shyri.materialtoolbar.activity.MaterialToolbarActivity;
+import es.shyri.materialtoolbar.interfaces.MaterialToolbarMessageReceiver;
+
 
 /**
  * Created by Shyri on 27/02/2015.
  */
-public class MaterialToolbar extends Toolbar implements MaterialToolbarContent.UIToolbarContentListener
-{
+public class MaterialToolbar extends Toolbar implements MaterialToolbarContent.UIToolbarContentListener {
     MaterialToolbarContent mSmartToolbarComponent;
     ActionBarActivity mActivity;
     MaterialToolbarMessageReceiver mMessageReceiver;
@@ -31,14 +32,12 @@ public class MaterialToolbar extends Toolbar implements MaterialToolbarContent.U
         super(context, attrs, defStyleAttr);
     }
 
-    public void init(ActionBarActivity activity)
-    {
+    public void init(MaterialToolbarActivity activity) {
         this.mActivity = activity;
         activity.setSupportActionBar(this);
     }
 
-    public void setComponent(MaterialToolbarContent smartToolbarComponent)
-    {
+    public void setContent (MaterialToolbarContent smartToolbarComponent) {
         if (this.mSmartToolbarComponent != null) {
             removeView(this.mSmartToolbarComponent.getView());
         }
@@ -54,13 +53,11 @@ public class MaterialToolbar extends Toolbar implements MaterialToolbarContent.U
         }
     }
 
-    protected void sendMessage(Object message)
-    {
+    protected void sendMessage(Object message){
         this.mMessageReceiver.onReceiveToolbarMessage(message);
     }
 
-    public void setmMessageReceiver(MaterialToolbarMessageReceiver messageReceiver)
-    {
+    public void setmMessageReceiver(MaterialToolbarMessageReceiver messageReceiver){
         this.mMessageReceiver = messageReceiver;
     }
 
