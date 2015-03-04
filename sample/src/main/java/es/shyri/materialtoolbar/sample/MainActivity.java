@@ -1,8 +1,10 @@
 package es.shyri.materialtoolbar.sample;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -46,11 +48,23 @@ public class MainActivity extends MaterialToolbarActivity {
     }
 
 
-    private void navigateTo(Fragment fragment){
+    public void navigateTo(Fragment fragment){
         FragmentTransaction ft = getFragmentManager().beginTransaction();
         ft.replace(R.id.mainFragment, fragment); // f1_container is your FrameLayout container
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         ft.addToBackStack(null);
         ft.commit();
+    }
+
+    @Override
+    public void onBackPressed(){
+        FragmentManager fm = getFragmentManager();
+        if (fm.getBackStackEntryCount() > 0) {
+            Log.i("MainActivity", "popping backstack");
+            fm.popBackStack();
+        } else {
+            Log.i("MainActivity", "nothing on backstack, calling super");
+            super.onBackPressed();
+        }
     }
 }

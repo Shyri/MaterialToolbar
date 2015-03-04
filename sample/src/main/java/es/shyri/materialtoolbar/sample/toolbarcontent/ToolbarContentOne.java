@@ -17,6 +17,10 @@ public class ToolbarContentOne extends MaterialToolbarContent {
     @Override
 
     public void configureActionBar(ActionBarActivity paramActionBarActivity) {
-
+        super.configureActionBar(paramActionBarActivity);
+        paramActionBarActivity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        paramActionBarActivity.getSupportActionBar().setHomeButtonEnabled(true);
     }
+
+
 }
