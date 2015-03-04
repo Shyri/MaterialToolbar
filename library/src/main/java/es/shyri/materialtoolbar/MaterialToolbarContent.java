@@ -1,6 +1,7 @@
 package es.shyri.materialtoolbar;
 
 import android.content.Context;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,7 +34,9 @@ public abstract class MaterialToolbarContent extends LinearLayout{
         this.mUIToolbarContentListener = uiToolbarContentListener;
     }
 
-    public abstract void configureActionBar(ActionBarActivity paramActionBarActivity);
+    public void configureActionBar(ActionBarActivity paramActionBarActivity){
+        restoreActionbar(paramActionBarActivity.getSupportActionBar());
+    }
 
     public int getMenuId()
     {
@@ -42,5 +45,12 @@ public abstract class MaterialToolbarContent extends LinearLayout{
 
     public static abstract interface UIToolbarContentListener {
         public abstract void onToolbarComponentMessage(Object paramObject);
+    }
+
+    private void restoreActionbar(ActionBar actionBar){
+        actionBar.setDisplayShowCustomEnabled(false);
+        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(false);
+        actionBar.setHomeButtonEnabled(false);
     }
 }

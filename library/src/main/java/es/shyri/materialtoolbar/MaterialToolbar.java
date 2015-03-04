@@ -5,7 +5,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 
-import es.shyri.materialtoolbar.activity.MaterialToolbarActivity;
 import es.shyri.materialtoolbar.interfaces.MaterialToolbarMessageReceiver;
 
 
@@ -14,7 +13,6 @@ import es.shyri.materialtoolbar.interfaces.MaterialToolbarMessageReceiver;
  */
 public class MaterialToolbar extends Toolbar implements MaterialToolbarContent.UIToolbarContentListener {
     MaterialToolbarContent mSmartToolbarComponent;
-    ActionBarActivity mActivity;
     MaterialToolbarMessageReceiver mMessageReceiver;
 
     public MaterialToolbar(Context context)
@@ -27,14 +25,8 @@ public class MaterialToolbar extends Toolbar implements MaterialToolbarContent.U
         super(context, attrs);
     }
 
-    public MaterialToolbar(Context context, AttributeSet attrs, int defStyleAttr)
-    {
+    public MaterialToolbar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-    }
-
-    public void init(MaterialToolbarActivity activity) {
-        this.mActivity = activity;
-        activity.setSupportActionBar(this);
     }
 
     public void setContent (MaterialToolbarContent smartToolbarComponent) {
@@ -45,7 +37,10 @@ public class MaterialToolbar extends Toolbar implements MaterialToolbarContent.U
         this.mSmartToolbarComponent.setSmartToolbarComponentListener(this);
 
         addView(this.mSmartToolbarComponent.getView());
-        this.mSmartToolbarComponent.configureActionBar(this.mActivity);
+
+        this.mSmartToolbarComponent.configureActionBar((ActionBarActivity) getContext());
+
+        getMenu().clear();
         if (this.mSmartToolbarComponent.getMenuId() != 0) {
             inflateMenu(this.mSmartToolbarComponent.getMenuId());
         } else {
