@@ -24,7 +24,7 @@ public class FragmentTwo extends MaterialToolbarFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_one, null);
+        View view = inflater.inflate(R.layout.fragment_two, null);
         return view;
     }
 }
