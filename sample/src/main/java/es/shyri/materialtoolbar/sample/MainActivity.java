@@ -1,25 +1,28 @@
 package es.shyri.materialtoolbar.sample;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import es.shyri.materialtoolbar.MaterialToolbar;
-import es.shyri.materialtoolbar.activity.MaterialToolbarActivity;
+import es.shyri.materialtoolbar.MaterialPresenter;
 import es.shyri.materialtoolbar.sample.fragment.FragmentOne;
 
 
-public class MainActivity extends MaterialToolbarActivity {
+public class MainActivity extends ActionBarActivity {
+    MaterialPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setLayoutContentId(R.id.mainFragment);
-        setMaterialToolbar((MaterialToolbar) findViewById(R.id.main_toolbar));
-        navigateTo(new FragmentOne());
+        presenter = new MaterialPresenter.Presenter()
+                .withActivity(this)
+                .withToolBar(R.id.main_toolbar)
+                .withFragmentContainer(R.id.mainFragment)
+                .build();
+        presenter.navigateTo(new FragmentOne());
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -41,5 +44,10 @@ public class MainActivity extends MaterialToolbarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed(){
+        if(!presenter.onBackPressed()) super.onBackPressed();
     }
 }

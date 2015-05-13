@@ -11,8 +11,8 @@ import es.shyri.materialtoolbar.interfaces.MaterialToolbarMessageReceiver;
 /**
  * Created by Shyri on 27/02/2015.
  */
-public class MaterialToolbar extends Toolbar implements MaterialToolbarContent.UIToolbarContentListener {
-    MaterialToolbarContent mSmartToolbarComponent;
+public class MaterialToolbar extends Toolbar {
+    MaterialToolbarContent mMaterialToolbarContent;
     MaterialToolbarMessageReceiver mMessageReceiver;
 
     public MaterialToolbar(Context context)
@@ -29,35 +29,29 @@ public class MaterialToolbar extends Toolbar implements MaterialToolbarContent.U
         super(context, attrs, defStyleAttr);
     }
 
-    public void setContent (MaterialToolbarContent smartToolbarComponent) {
-        if (this.mSmartToolbarComponent != null) {
-            removeView(this.mSmartToolbarComponent.getView());
+    public void setContent (MaterialToolbarContent materialToolbarContent) {
+        if (mMaterialToolbarContent != null) {
+            removeView(this.mMaterialToolbarContent.getView());
         }
-        this.mSmartToolbarComponent = smartToolbarComponent;
-        this.mSmartToolbarComponent.setSmartToolbarComponentListener(this);
+        mMaterialToolbarContent = materialToolbarContent;
 
-        addView(this.mSmartToolbarComponent.getView());
+        addView(mMaterialToolbarContent.getView());
 
-        this.mSmartToolbarComponent.configureActionBar((ActionBarActivity) getContext());
+        mMaterialToolbarContent.configureActionBar((ActionBarActivity) getContext());
 
         getMenu().clear();
-        if (this.mSmartToolbarComponent.getMenuId() != 0) {
-            inflateMenu(this.mSmartToolbarComponent.getMenuId());
+        if (mMaterialToolbarContent.getMenuId() != null) {
+            inflateMenu(mMaterialToolbarContent.getMenuId());
         } else {
             getMenu().clear();
         }
-    }
 
-    protected void sendMessage(Object message){
-        this.mMessageReceiver.onReceiveToolbarMessage(message);
+        if(materialToolbarContent.getActionbarBackground() != null){
+            setBackground(materialToolbarContent.getActionbarBackground());
+        }
     }
-
-    public void setmMessageReceiver(MaterialToolbarMessageReceiver messageReceiver){
-        this.mMessageReceiver = messageReceiver;
-    }
-
-    public void onToolbarComponentMessage(Object message)
-    {
-        sendMessage(message);
+    @Override
+    public void onAttachedToWindow() {
+        super.onAttachedToWindow();
     }
 }

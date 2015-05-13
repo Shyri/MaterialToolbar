@@ -11,7 +11,7 @@ import es.shyri.materialtoolbar.MaterialToolbarContent;
 public class ToolbarContentOne extends MaterialToolbarContent {
 
     public ToolbarContentOne(Context context, int layoutId, Integer menuId) {
-        super(context, layoutId, menuId);
+        super(context, layoutId);
     }
 
     @Override
@@ -20,6 +20,4 @@ public class ToolbarContentOne extends MaterialToolbarContent {
         paramActionBarActivity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         paramActionBarActivity.getSupportActionBar().setHomeButtonEnabled(true);
     }
-
-
 }

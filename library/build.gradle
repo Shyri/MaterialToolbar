@@ -19,14 +19,13 @@ android {
     }
 }
 
-
 uploadArchives {
     repositories {
         mavenDeployer {
             repository(url: localMavenRepo)
             pom.groupId = 'es.shyri'
             pom.artifactId = 'materialtoolbar'
-            pom.version = '0.0.1'
+            pom.version = '1.0-SNAPSHOT'
             pom.packaging = 'aar'
             pom.name = 'materialtoolbar'
         }
