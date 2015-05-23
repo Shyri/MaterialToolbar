@@ -1,6 +1,7 @@
 package es.shyri.materialtoolbar;
 
 import android.content.Context;
+import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
@@ -47,7 +48,11 @@ public class MaterialToolbar extends Toolbar {
         }
 
         if(materialToolbarContent.getActionbarBackground() != null){
-            setBackground(materialToolbarContent.getActionbarBackground());
+            if (android.os.Build.VERSION.SDK_INT <= Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1) {
+                setBackgroundDrawable(materialToolbarContent.getActionbarBackground());
+            }else{
+                setBackground(materialToolbarContent.getActionbarBackground());
+            }
         }
     }
     @Override
