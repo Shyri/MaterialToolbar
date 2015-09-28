@@ -1,28 +1,20 @@
 package es.shyri.materialtoolbar;
 
 import android.content.Context;
-import android.os.Build;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 
-import es.shyri.materialtoolbar.interfaces.MaterialToolbarMessageReceiver;
-
-
 /**
- * Created by Shyri on 27/02/2015.
+ * Created by Shyri on 23/09/2015.
  */
 public class MaterialToolbar extends Toolbar {
     MaterialToolbarContent mMaterialToolbarContent;
-    MaterialToolbarMessageReceiver mMessageReceiver;
 
-    public MaterialToolbar(Context context)
-    {
+    public MaterialToolbar(Context context) {
         super(context);
     }
 
-    public MaterialToolbar(Context context, AttributeSet attrs)
-    {
+    public MaterialToolbar(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -37,26 +29,13 @@ public class MaterialToolbar extends Toolbar {
         mMaterialToolbarContent = materialToolbarContent;
 
         addView(mMaterialToolbarContent.getView());
-
-        mMaterialToolbarContent.configureActionBar((ActionBarActivity) getContext());
-
-        getMenu().clear();
-        if (mMaterialToolbarContent.getMenuId() != null) {
-            inflateMenu(mMaterialToolbarContent.getMenuId());
-        } else {
-            getMenu().clear();
-        }
-
-        if(materialToolbarContent.getActionbarBackground() != null){
-            if (android.os.Build.VERSION.SDK_INT <= Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1) {
-                setBackgroundDrawable(materialToolbarContent.getActionbarBackground());
-            }else{
-                setBackground(materialToolbarContent.getActionbarBackground());
-            }
-        }
     }
-    @Override
-    public void onAttachedToWindow() {
-        super.onAttachedToWindow();
+
+    public MaterialToolbarContent getMaterialToolbarContent() {
+        return mMaterialToolbarContent;
+    }
+
+    public void setMaterialToolbarContent(MaterialToolbarContent mMaterialToolbarContent) {
+        this.mMaterialToolbarContent = mMaterialToolbarContent;
     }
 }
