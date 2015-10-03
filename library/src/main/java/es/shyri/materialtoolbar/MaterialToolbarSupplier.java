@@ -15,5 +15,6 @@ public interface MaterialToolbarSupplier {
      * @return
      */
     public MaterialToolbarContent getToolbarContent();
+    public MaterialPresenter getPresenter();
     public boolean onBackPressed();
 }
