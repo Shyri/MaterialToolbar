@@ -60,7 +60,7 @@ public class MaterialPresenter implements FragmentManager.OnBackStackChangedList
     }
 
     public boolean onBackPressed() {
-        if (fragmentManager.getBackStackEntryCount() > 0) {
+        if (fragmentManager.getBackStackEntryCount() > 1) {
             boolean handledByFragment = false;
 
             if(currentFragent instanceof MaterialToolbarSupplier){
@@ -81,11 +81,7 @@ public class MaterialPresenter implements FragmentManager.OnBackStackChangedList
     public void onBackStackChanged() {
         currentFragent = fragmentManager.findFragmentById(fragmentContainerId);
         if(currentFragent!=null){
-            try{
-                if(currentFragent instanceof MaterialToolbarSupplier) toolbar.setContent(((MaterialToolbarSupplier) currentFragent).getToolbarContent());
-            } catch (Exception e){
-                e.printStackTrace();
-            }
+            if(currentFragent instanceof MaterialToolbarSupplier) toolbar.setContent(((MaterialToolbarSupplier) currentFragent).getToolbarContent());
         }
     }
 }
