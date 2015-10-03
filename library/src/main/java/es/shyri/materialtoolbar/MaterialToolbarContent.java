@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 
 /**
  * Created by Shyri on 27/02/2015.
+ *
  */
 
 public class MaterialToolbarContent extends LinearLayout {
@@ -30,8 +31,6 @@ public class MaterialToolbarContent extends LinearLayout {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec){
-        int parentWidth = MeasureSpec.getSize(widthMeasureSpec);
-
         this.setMeasuredDimension(-1, -2);
         this.setLayoutParams(new Toolbar.LayoutParams(-1, -2));
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
