@@ -1,53 +1,46 @@
 package es.shyri.materialtoolbar.sample;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 
 import es.shyri.materialtoolbar.MaterialPresenter;
-import es.shyri.materialtoolbar.sample.fragment.FragmentOne;
+import es.shyri.materialtoolbar.sample.fragment.FragmentCityList;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity implements FragmentManager.OnBackStackChangedListener {
     MaterialPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
-        presenter = new MaterialPresenter.Presenter()
-                .withActivity(this)
-                .withToolBar(R.id.main_toolbar)
-                .withFragmentContainer(R.id.mainFragment)
-                .build();
-        presenter.navigateTo(new FragmentOne());
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+        presenter = MaterialPresenter.getInstance();
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        getFragmentManager().addOnBackStackChangedListener(this);
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        presenter.attachActivity(this, R.id.main_toolbar, R.id.fragmentContainer);
+        if (getFragmentManager().findFragmentById(R.id.fragmentContainer) == null) {
+            presenter.navigateTo(new FragmentCityList());
         }
-
-        return super.onOptionsItemSelected(item);
     }
 
     @Override
     public void onBackPressed(){
         if(!presenter.onBackPressed()) super.onBackPressed();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        getFragmentManager().removeOnBackStackChangedListener(this);
+        presenter.detachActivity();
+    }
+
+    @Override
+    public void onBackStackChanged() {
+        getSupportActionBar().setDisplayHomeAsUpEnabled(getFragmentManager().getBackStackEntryCount() > 1);
     }
 }
