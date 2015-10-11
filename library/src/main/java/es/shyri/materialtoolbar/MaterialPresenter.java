@@ -55,6 +55,7 @@ public class MaterialPresenter implements FragmentManager.OnBackStackChangedList
         fragmentManager = activity.getFragmentManager();                    // Get the FragmentManager instance
         toolbar = (MaterialToolbar) activity.findViewById(toolbarId);       // get the MaterialToolbar Instance
         activity.setSupportActionBar(toolbar);                              // assign MaterialToolbar to the activity
+        activity.getSupportActionBar().setDisplayShowCustomEnabled(true);                             // assign MaterialToolbar to the activity
         this.fragmentContainerId = fragmentContainerId;
         fragmentManager.addOnBackStackChangedListener(this);                // We want to know of backstack change events
         // Show back arrow on the actionbar when the backstack has more than one fragment.
@@ -129,6 +130,7 @@ public class MaterialPresenter implements FragmentManager.OnBackStackChangedList
         currentFragent = fragmentManager.findFragmentById(fragmentContainerId);
         if(currentFragent!=null){
             if(currentFragent instanceof MaterialToolbarSupplier) toolbar.setContent(((MaterialToolbarSupplier) currentFragent).getToolbarContent());
+            else toolbar.setContent(null);
         }
     }
 }

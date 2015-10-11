@@ -28,8 +28,8 @@ public class MaterialToolbar extends Toolbar {
             removeView(this.mMaterialToolbarContent.getView());
         }
         mMaterialToolbarContent = materialToolbarContent;
-
-        addView(mMaterialToolbarContent.getView());
+        if (mMaterialToolbarContent != null)
+            addView(mMaterialToolbarContent.getView());
     }
 
     public MaterialToolbarContent getContent() {
