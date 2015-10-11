@@ -1,7 +1,7 @@
 # MaterialToolbar
 MaterialToolbar makes it easy to build a Fragment navigation based application with fully customized toolbar views.
 
-Imagen
+![Alt text](/images/demo-portrait.gif?raw=true) ![Alt text](/images/demo-landscape.gif?raw=true)
 
 ## How it works
 To do this it uses a simple MVP model with presenter class called MaterialPresenter that will handle Fragment navigation 
