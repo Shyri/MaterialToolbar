@@ -132,6 +132,7 @@ And obviously override the other MaterialToolbarSupplier methods
 ```
 
 ## Download
+MaterialToolbar is available through jcenter()
 ```gradle
 
 dependencies {
