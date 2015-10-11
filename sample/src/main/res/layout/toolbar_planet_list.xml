@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginBottom="8dp"
     android:animateLayoutChanges="true"
     android:orientation="vertical">
 
     <Spinner
-        android:id="@+id/spinnerContinent"
+        android:id="@+id/spinnerPlanets"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:layout_gravity="center_horizontal"
@@ -15,7 +15,7 @@
         android:padding="6dp" />
 
     <Spinner
-        android:id="@+id/spinnerCountry"
+        android:id="@+id/spinnerCategory"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:layout_gravity="center_horizontal"

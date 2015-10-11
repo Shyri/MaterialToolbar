@@ -13,9 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:animateLayoutChanges="true"
-        android:background="?attr/colorPrimary"
+        android:background="@color/primary"
         android:minHeight="?attr/actionBarSize"
-        style="@style/MyToolbarTheme"
+        es.shyri.materialtoolbar.sample:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         android:elevation="4dp"/>
 
 

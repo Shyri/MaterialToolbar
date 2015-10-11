@@ -3,19 +3,12 @@
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="android:colorPrimary">@color/primaryColor</item>
-        <item name="android:navigationBarColor">@color/primaryColor</item>
-    </style>
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
 
-    <style name="MyToolbarTheme" parent="Theme.AppCompat.Light">
-        <!-- Set AppCompat’s actionBarStyle -->
-        <!--<item name="actionBarStyle">@style/MyActionBarStyle</item>-->
-
-        <!-- Set AppCompat’s color theming attrs -->
-
-        <!--<item name="colorPrimaryDark">@color/my_awesome_darker_red</item>-->
-
-        <!-- The rest of your attributes -->
     </style>
 
 </resources>

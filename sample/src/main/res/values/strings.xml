@@ -1,8 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">MaterialToolbar Sample</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string name="category_star">Stars</string>
+    <string name="category_planet">Planets</string>
+    <string name="category_asteroid">Asteroids</string>
+    <string name="category_commet">Comets</string>
+    <string name="category_dwarf_planet">Dwarf Planets</string>
+
+    <string name="name_all">All</string>
+
+    <string name="name_sun">Sun</string>
+    <string name="description_sun">Sun</string>
+
+    <string name="name_mercury">Mercury</string>
+    <string name="description_mercury" formatted="false">Mercury is the smallest and closest to the Sun of the eight planets in the Solar System,[a] with an orbital period of about 88 Earth days. Seen from Earth, it appears to move around its orbit in about 116 days, which is much faster than any other planet in the Solar System. It has no known natural satellites. The planet is named after the Roman deity Mercury, the messenger to the gods.</string>
+
+    <string name="name_venus">Venus</string>
+    <string name="description_venus" formatted="false">Venus is the second planet from the Sun, orbiting it every 224.7 Earth days.[13] It has no natural satellite. It is named after the Roman goddess of love and beauty. After the Moon, it is the brightest natural object in the night sky, reaching an apparent magnitude of −4.6, bright enough to cast shadows.[14] Because Venus is an inferior planet from Earth, it never appears to venture far from the Sun: its elongation reaches a maximum of 47.8°.</string>
+
+    <string name="name_2002_VE68">2002 VE68</string>
+    <string name="description_2002_VE68">It is a temporary quasi-satellite of Venus.[6] It was the first quasi-satellite to be discovered around a major planet in the Solar System. In a frame of reference rotating with Venus, it appears to travel around it during one Venusian year but it actually orbits the Sun, not Venus.[7]</string>
+
+    <string name="name_4183_Cuno">4183 Cuno</string>
+    <string name="description_4183_Cuno">4183 Cuno is an Apollo, Mars- and Venus-crosser asteroid. It was discovered in 1959 by Cuno Hoffmeister, from whom the asteroid takes its name.Cuno is about 4–9 km in diameter and is an S-type asteroid, meaning that it is highly reflective and composed of nickel-iron mixed with iron- and magnesium-silicates.In December 2000, Cuno was analysed by radar to determine its shape. The resultant images are lacking in detail, but indicate a rough sphere with some kind of concave depression 1–2 km in diameter.4183 Cuno approaches the Earth to within 40 Gm six times in the 21st century. On 2012-May-20 Cuno made its closest Earth approach at a distance of 0.12182 AU (18,224,000 km; 11,324,000 mi).[1] It will not make a closer approach until 2093.</string>
+
+    <string name="name_earth">Earth</string>
+    <string name="description_earth">Earth (also the world[n 5], in Greek: Gaia,[n 6] or in Latin: Terra[26]), is the third planet from the Sun, the densest planet in the Solar System, the largest of the Solar System\'s four terrestrial planets, and the only astronomical object known to accommodate life. The earliest life on Earth arose at least 3.5 billion years ago.[27][28][29] Earth\'s biodiversity has expanded continually except when interrupted by mass extinctions.[30] Although scholars estimate that over 99 percent of all species of life (over five billion)[31] that ever lived on Earth are extinct,[32][33] there are still an estimated 10–14 million extant species,[34][35] of which about 1.2 million have been documented and over 86 percent have not yet been described.[36] Over 7.3 billion humans[37] live on Earth and depend on its biosphere and minerals for their survival. Earth\'s human population is divided among about two hundred sovereign states which interact through diplomacy, conflict, travel, trade and communication media.</string>
+
+
+    <string name="name_moon">Moon</string>
+    <string name="description_moon">The Moon (in Greek: σελήνη Selene, in Latin: Luna) is Earth\'s only natural satellite.[e][9] It is one of the largest natural satellites in the Solar System, and, among planetary satellites, the largest relative to the size of the planet it orbits (its primary).[f][g] It is the second-densest satellite among those whose densities are known (after Jupiter\'s satellite Io).</string>
+
+    <string name="name_3753_Cruithne">3753 Cruithne</string>
+    <string name="description_3753_Cruithne">3753 Cruithne (/kruːˈiːnjə/[2] or /ˈkrʊnjə/)[3] is an Aten asteroid in orbit around the Sun in 1:1 orbital resonance with Earth, making it a co-orbital object. It is a minor planet in solar orbit that, relative to Earth, orbits in a bean-shaped orbit that ultimately effectively describes a horseshoe, and which can transition into a quasi-satellite orbit.[4] It has been incorrectly called "Earth\'s second moon".[2][5] Cruithne does not orbit Earth and at times it is on the other side of the Sun.[6] Its orbit takes it inside the orbit of Mercury and outside the orbit of Mars.[6] Cruithne orbits the Sun in about 1 year but it takes 770 years for the series to complete a horseshoe-shaped movement around the Earth.[6]</string>
+
+    <string name="name_2010_TK7">2010 TK7</string>
+    <string name="description_2010_TK7">2010 TK7 is a near-Earth asteroid and the first Earth trojan ever discovered; it precedes Earth in its orbit around the Sun.[5][6] Trojan objects are most easily conceived as orbiting at a Lagrangian point, a dynamically stable location (where gravitational and centrifugal forces balance) 60 degrees ahead of or behind a massive orbiting body, in a type of 1:1 orbital resonance. In reality, they oscillate (librate) around such a point. Such objects had previously been observed in the orbits of Mars, Jupiter, Neptune, and the Saturnian moons Tethys and Dione.2010 TK7 has a diameter of about 300 meters (1,000 ft).[4] Its path oscillates about the Sun–Earth L4 Lagrangian point (60 degrees ahead of Earth), shuttling between its closest approach to Earth and its closest approach to the L3 point (180 degrees from Earth) about every 400 years.</string>
+
+
+    <string name="name_mars">Mars</string>
+    <string name="description_mars" formatted="false">Mars is the fourth planet from the Sun and the second smallest planet in the Solar System, after Mercury. Named after the Roman god of war, it is often referred to as the "Red Planet" because the iron oxide prevalent on its surface gives it a reddish appearance.[16] Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the volcanoes, valleys, deserts, and polar ice caps of Earth. The rotational period and seasonal cycles of Mars are likewise similar to those of Earth, as is the tilt that produces the seasons. Mars is the site of Olympus Mons, the largest volcano and second-highest known mountain in the Solar System, and of Valles Marineris, one of the largest canyons in the Solar System. The smooth Borealis basin in the northern hemisphere covers 40% of the planet and may be a giant impact feature.[17][18] Mars has two moons, Phobos and Deimos, which are small and irregularly shaped. These may be captured asteroids,[19][20] similar to 5261 Eureka, a Mars trojan.</string>
+
+    <string name="name_deimos">Deimos</string>
+    <string name="description_deimos">Deimos (systematic designation: Mars II)[5] is the smaller and outer of the two natural satellites of the planet Mars with a mean radius of 6.2 kilometres (3.9 mi),[1] the other being Phobos. Deimos takes 30.3 hours[1] to orbit Mars. The name Deimos is pronounced /ˈdaɪməs/ dy-məs, or sometimes /ˈdiːməs/ dee-məs or like the Greek Δείμος. In Greek mythology, Deimos was the twin brother of Phobos and personified terror.</string>
+
+    <string name="name_phobos">Phobos</string>
+    <string name="description_phobos">Phobos (systematic designation: Mars I) is the larger and inner of the two natural satellites of Mars, the other being Deimos. Both moons were discovered in 1877 by American astronomer Asaph Hall.Phobos is a small, irregularly shaped object with a mean radius of 11 km,[1] and is seven times more massive than Deimos, Mars\'s outer moon. Phobos is named after the Greek god Phobos, a son of Ares (Mars) and Aphrodite (Venus) which was the personification of Horror. The name "Phobos" is pronounced /ˈfoʊbəs/ foh-bəs, or like the Greek Φόβος.</string>
+
+    <string name="name_ceres">Ceres</string>
+    <string name="description_ceres">Ceres (/ˈsɪəriːz/;[16] minor-planet designation: 1 Ceres) is the largest object in the asteroid belt, which lies between the orbits of Mars and Jupiter. Its diameter is approximately 945 kilometers (587 miles),[6] making it the largest of the minor planets within the orbit of Neptune. The thirty-third largest known body in the Solar System, it is the only one identified orbiting entirely within the orbit of Neptune that is a dwarf planet.[17] Composed of rock and ice, Ceres is estimated to comprise approximately one third of the mass of the entire asteroid belt. Ceres is the only object in the asteroid belt known to be unambiguously rounded by its own gravity. From Earth, the apparent magnitude of Ceres ranges from 6.7 to 9.3, and hence even at its brightest, it is too dim to be seen with the naked eye, except under extremely dark skies.</string>
+
+
+    <string name="name_pallas">2 Pallas</string>
+    <string name="description_pallas" formatted="false">Pallas, minor-planet designation 2 Pallas, is the second asteroid to have been discovered (after Ceres), and it is one of the largest asteroids in the Solar System. With an estimated 7% of the mass of the asteroid belt, it is the third-most-massive asteroid, being 10–30% less massive than Vesta.[14] It is 512 kilometers (318 mi) in diameter, somewhat smaller than Vesta. It is likely a remnant protoplanet.</string>
+
+    <string name="name_vesta">4 Vesta</string>
+    <string name="description_vesta">Vesta, minor-planet designation 4 Vesta, is one of the largest objects in the asteroid belt, with a mean diameter of 525 kilometres (326 mi).[7] It was discovered by the German astronomer Heinrich Wilhelm Olbers on 29 March 1807[5] and is named after Vesta, the virgin goddess of home and hearth from Roman mythology.</string>
+
+
+    <string name="name_jupiter">Jupiter</string>
+    <string name="description_jupiter">Jupiter is the fifth planet from the Sun and the largest planet in the Solar System. It is a giant planet with a mass one-thousandth that of the Sun, but is two and a half times that of all the other planets in the Solar System combined. Jupiter is a gas giant, along with Saturn (Uranus and Neptune are ice giants). Jupiter was known to astronomers of ancient times.[11] The Romans named it after their god Jupiter.[12] When viewed from Earth, Jupiter can reach an apparent magnitude of −2.94, bright enough to cast shadows,[13] and making it on average the third-brightest object in the night sky after the Moon and Venus.</string>
+
+
+    <string name="name_io">Io</string>
+    <string name="description_io">Io /ˈaɪ.oʊ/[6] is the innermost of the four Galilean moons of the planet Jupiter. It is the fourth-largest moon, has the highest density of all the moons, and is the driest known object in the Solar System. It was discovered in 1610 and was named after the mythological character Io, a priestess of Hera who became one of Zeus\'s lovers.With over 400 active volcanoes, Io is the most geologically active object in the Solar System.[7][8] This extreme geologic activity is the result of tidal heating from friction generated within Io\'s interior as it is pulled between Jupiter and the other Galilean satellites—Europa, Ganymede and Callisto. Several volcanoes produce plumes of sulfur and sulfur dioxide that climb as high as 500 km (300 mi) above the surface. Io\'s surface is also dotted with more than 100 mountains that have been uplifted by extensive compression at the base of Io\'s silicate crust. Some of these peaks are taller than Mount Everest.[9] Unlike most satellites in the outer Solar System, which are mostly composed of water ice, Io is primarily composed of silicate rock surrounding a molten iron or iron sulfide core. Most of Io\'s surface is composed of extensive plains coated with sulfur and sulfur dioxide frost.</string>
+
+    <string name="name_europa">Europa</string>
+    <string name="description_europa">Europa Listeni/jʊˈroʊpə/[9] (Jupiter II), is the sixth-closest moon of Jupiter, and the smallest of its four Galilean satellites, but still the sixth-largest moon in the Solar System. Europa was discovered in 1610 by Galileo Galilei[1] and was named after Europa, daughter of the king of Tyre, who became one of Zeus\' lovers. Progressively better observations of Europa have occurred over the centuries by Earth-bound telescopes, and by space probe flybys starting in the 1970s.</string>
+
+    <string name="name_ganymede">Ganymede</string>
+    <string name="description_ganymed" formatted="false">Ganymede /ˈɡænɨmiːd/[12] (Jupiter III) is the largest moon of Jupiter and in the Solar System, and the only moon known to have a magnetosphere. It is the seventh satellite outward from Jupiter[13] and third of the Galilean moons, the first group of objects discovered orbiting another planet. Completing an orbit in roughly seven days, Ganymede participates in a 1:2:4 orbital resonance with the moons Europa and Io, respectively. With a diameter of 5,268 km (3,273 mi), it is 8% larger than the planet Mercury, but has only 45% as much mass.[14] Its diameter is 2% larger than that of Saturn\'s Titan, the Solar System\'s second-largest moon. At 2.02 times the mass of the Moon, it is the most massive planetary satellite.[15] It is the 9th largest object in the Solar System, and the largest without a substantial atmosphere.</string>
+
+    <string name="name_callisto">Callisto</string>
+    <string name="description_callisto" formatted="false">Callisto /kəˈlɪstoʊ/[8] (Jupiter IV) is a moon of the planet Jupiter. It was discovered in 1610 by Galileo Galilei. It is the third-largest moon in the Solar System and the second largest in the Jovian system, after Ganymede, and the largest object in the Solar System not to be properly differentiated. At 4821 km in diameter, Callisto has about 99% the diameter of the planet Mercury but only about a third of its mass. It is the fourth Galilean moon of Jupiter by distance, with an orbital radius of about 1880000 km.[2] It is not part of the orbital resonance that affects three inner Galilean satellites—Io, Europa and Ganymede—and thus does not experience appreciable tidal heating.[9] Callisto\'s rotation is tidally locked to its orbit around Jupiter, so that the same hemisphere always faces inward; Jupiter appears to stand nearly still in Callisto\'s sky. It is less affected by Jupiter\'s magnetosphere than the other inner satellites because of its more remote orbit, located just outside Jupiter\'s main radiation belt.[10][11]</string>
+
+
+    <string name="name_saturn">Saturn</string>
+    <string name="description_saturn">Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius about nine times that of Earth.[10][11] Although only one-eighth the average density of Earth, with its larger volume Saturn is just over 95 times more massive.[12][13][14] Saturn is named after the Roman god of agriculture, its astronomical symbol (♄) represents the god\'s sickle.</string>
+
+
+    <string name="name_mimas">Mimas</string>
+    <string name="description_mimas">Mimas is a moon of Saturn which was discovered in 1789 by William Herschel.[8] It is named after Mimas, a son of Gaia in Greek mythology, and is also designated Saturn I.</string>
+
+
+    <string name="name_enceladus">Enceladus</string>
+    <string name="description_enceladus">Enceladus (pronounced /ɛnˈsɛlədəs/) is the sixth-largest moon of Saturn. It is only 500 kilometers (310 mi) in diameter,[3] about a tenth of that of Saturn\'s largest moon, Titan. Enceladus is mostly covered by fresh, clean ice, reflecting almost all the sunlight that strikes it and making its surface temperature at noon reach only −198 °C. Enceladus has a wide range of surface features, ranging from old, heavily cratered regions to young, tectonically deformed terrains that formed as recently as 100 million years ago, despite its small size.Enceladus was discovered in 1789 by William Herschel,[1][13][14] but little was known about it until the two Voyager spacecraft passed nearby in the early 1980s.[15] In 2005, the Cassini spacecraft started multiple close flybys of Enceladus, revealing its surface and environment in greater detail. In particular, Cassini discovered a water-rich plume venting from the south polar region of Enceladus.[16] Cryovolcanoes near the south pole shoot geyser-like jets of water vapor, other volatiles, and solid material, including sodium chloride crystals and ice particles, into space, totaling approximately 200 kilograms (440 lb) per second.[15][17][18] Over 100 geysers have been identified.[19] Some of the water vapor falls back as "snow"; the rest escapes, and supplies most of the material making up Saturn\'s E ring.[20][21] According to NASA scientists, the plumes at Enceladus are similar in composition to comets.[22] In 2014, NASA reported that Cassini found evidence for a large south polar subsurface ocean of liquid water within Enceladus with a thickness of around 10 km.[23][24][25]</string>
+
+
+    <string name="name_tethys">Tethys</string>
+    <string name="description_tethys">Tethys or Saturn III is a mid-sized moon of Saturn about 1,060 km (660 mi) across. It was discovered by G. D. Cassini in 1684 and is named after the titan Tethys of Greek mythology.Tethys has a low density of 0.98 g/cm3, the lowest of all the major moons in the Solar System, indicating that it is made of water ice with just a small fraction of rock. This is confirmed by the spectroscopy of its surface, which identified water ice as the dominant surface material. A small amount of an unidentified dark material is present as well. The surface of Tethys is very bright, being the second-brightest of the moons of Saturn after Enceladus, and neutral in color.</string>
+
+
+    <string name="name_dione">Dione</string>
+    <string name="description_dione">Dione (/daɪˈoʊni/;[7] Greek: Διώνη) is a moon of Saturn. It was discovered by Italian astronomer Giovanni Domenico Cassini in 1684.[8] It is named after the Titaness Dione of Greek mythology. It is also designated Saturn IV.</string>
+
+
+    <string name="name_rhea">Dione</string>
+    <string name="description_rhea">Rhea (/ˈriːə/;[b] Ancient Greek: Ῥέᾱ) is the second-largest moon of Saturn and the ninth-largest moon in the Solar System. It is the smallest body in the Solar System where precise measurement have confirmed a shape consistent with hydrostatic equilibrium.[7] It was discovered in 1672 by Giovanni Domenico Cassini.</string>
+
+
+    <string name="name_titan">Titan</string>
+    <string name="description_titan" formatted="false">Titan (or Saturn VI) is the largest moon of Saturn. It is the only natural satellite known to have a dense atmosphere,[9] and the only object other than Earth where clear evidence of stable bodies of surface liquid has been found.[10]Titan is the sixth ellipsoidal moon from Saturn. Frequently described as a planet-like moon, Titan\'s diameter is 50% larger than Earth\'s natural satellite, the Moon, and it is 80% more massive. It is the second-largest moon in the Solar System, after Jupiter\'s moon Ganymede, and is larger by volume than the smallest planet, Mercury, although only 40% as massive. Discovered in 1655 by the Dutch astronomer Christiaan Huygens,[11][12] Titan was the first known moon of Saturn, and the fifth known satellite of another planet.[13]</string>
+
+
+    <string name="name_hyperion">Hyperion</string>
+    <string name="description_hyperion">Hyperion (/haɪˈpɪəriən/;[b] Greek: Ὑπερίων), also known as Saturn VII (7), is a moon of Saturn discovered by William Cranch Bond, George Phillips Bond and William Lassell in 1848. It is distinguished by its irregular shape, its chaotic rotation, and its unexplained sponge-like appearance. It was the first non-round moon to be discovered.</string>
+
+    <string name="name_iapetus">Iapetus</string>
+    <string name="description_iapetus">Iapetus (/aɪˈæpɨtəs/; Greek: Ιαπετός), or occasionally Japetus /ˈdʒæpɨtəs/,[7] is the third-largest natural satellite of Saturn, eleventh-largest in the Solar System,[8] and the largest body in the Solar System known not to be in hydrostatic equilibrium.[9] Iapetus is best known for its dramatic \'two-tone\' coloration. Discoveries by the Cassini mission in 2007 revealed several other unusual features, such as a massive equatorial ridge running three-quarters of the way around the moon.</string>
+
+    <string name="name_phoebe">Phoebe</string>
+    <string name="description_phoebe">Phoebe (/ˈfiːbiː/;[4] Greek: Φοίβη) is an irregular satellite of Saturn with a mean diameter of 213 km. It was discovered by William Henry Pickering on 17 March 1899 from photographic plates that had been taken starting on 16 August 1898 at the Boyden Observatory near Arequipa, Peru, by DeLisle Stewart. It was the first satellite to be discovered photographically.</string>
+
+
+    <string name="name_uranus">Uranus</string>
+    <string name="description_uranus">Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is similar in composition to Neptune, and both have different bulk chemical composition from that of the larger gas giants Jupiter and Saturn. For this reason, scientists often classify Uranus and Neptune as "ice giants" to distinguish them from the gas giants. Uranus\'s atmosphere, although similar to Jupiter\'s and Saturn\'s in its primary composition of hydrogen and helium, contains more "ices", such as water, ammonia, and methane, along with traces of other hydrocarbons.[11] It is the coldest planetary atmosphere in the Solar System, with a minimum temperature of 49 K (−224.2 °C), and has a complex, layered cloud structure, with water thought to make up the lowest clouds, and methane the uppermost layer of clouds.[11] The interior of Uranus is mainly composed of ices and rock.[10]</string>
+
+
+    <string name="name_miranda">Miranda</string>
+    <string name="description_miranda">Miranda or Uranus V is the smallest and innermost of Uranus\'s five round satellites. Like the other large moons of Uranus, Miranda orbits close to its planet\'s equatorial plane. Because Uranus orbits the Sun on its side, Miranda\'s orbit is perpendicular to the ecliptic and shares Uranus\'s extreme seasonal cycle. At just 470 km in diameter, Miranda is one of the smallest objects in the Solar System known to be spherical under its own gravity. Of the bodies that are known to be in hydrostatic equilibrium, only Saturn\'s moon Mimas is smaller.</string>
+
+
+    <string name="name_ariel">Ariel</string>
+    <string name="description_ariel">Ariel is the fourth-largest of the 27 known moons of Uranus. Ariel orbits and rotates in the equatorial plane of Uranus, which is almost perpendicular to the orbit of Uranus, and so has an extreme seasonal cycle.</string>
+
+    <string name="name_umbriel">Umbriel</string>
+    <string name="description_umbriel">Umbriel is a moon of Uranus discovered on October 24, 1851, by William Lassell. It was discovered at the same time as Ariel and named after a character in Alexander Pope\'s poem The Rape of the Lock. Umbriel consists mainly of ice with a substantial fraction of rock, and may be differentiated into a rocky core and an icy mantle. The surface is the darkest among Uranian moons, and appears to have been shaped primarily by impacts. However, the presence of canyons suggests early endogenic processes, and the moon may have undergone an early endogenically driven resurfacing event that obliterated its older surface.</string>
+
+    <string name="name_titania">Titania</string>
+    <string name="description_titania">Titania is the largest of the moons of Uranus and the eighth largest moon in the Solar System at a diameter of 1,578 kilometres (981 mi). Discovered by William Herschel in 1787, Titania is named after the queen of the fairies in Shakespeare\'s A Midsummer Night\'s Dream. Its orbit lies inside Uranus\'s magnetosphere.</string>
+
+    <string name="name_oberon">Oberon</string>
+    <string name="description_oberon">Oberon, also designated Uranus IV, is the outermost major moon of the planet Uranus. It is the second-largest and second most massive of the Uranian moons, and the ninth most massive moon in the Solar System. Discovered by William Herschel in 1787, Oberon is named after the mythical king of the fairies who appears as a character in Shakespeare\'s A Midsummer Night\'s Dream. Its orbit lies partially outside Uranus\'s <magnetosphere class=""></magnetosphere></string>
+
+
+    <string name="name_neptune">Neptune</string>
+    <string name="description_neptune">Neptune is the eighth and farthest planet from the Sun in the Solar System. It is the fourth-largest planet by diameter and the third-largest by mass. Among the giant planets in the Solar System, Neptune is the most dense. Neptune is 17 times the mass of Earth and is slightly more massive than its near-twin Uranus, which is 15 times the mass of Earth, and not as dense as Neptune.[c] Neptune orbits the Sun at an average distance of 30.1 astronomical units (4.50×109 km). Named after the Roman god of the sea, its astronomical symbol is ♆, a stylised version of the god Neptune\'s trident.</string>
+
+
+    <string name="name_proteus">Proteus</string>
+    <string name="description_proteus">Proteus (/ˈproʊtiːəs/;[e] Greek: Πρωτεύς), also known as Neptune VIII, is the second largest Neptunian moon, and Neptune\'s largest inner satellite. Discovered by Voyager 2 spacecraft in 1989, it is named after Proteus, the shape-changing sea god of Greek mythology. Proteus orbits Neptune in a nearly equatorial orbit at the distance of about 4.75 equatorial radii of the planet.</string>
+
+    <string name="name_triton">Triton</string>
+    <string name="description_triton" formatted="false">Triton is the largest natural satellite of the planet Neptune. It was discovered on October 10, 1846, by English astronomer William Lassell. It is the only large moon in the Solar System with a retrograde orbit, an orbit in the opposite direction to its planet\'s rotation.[2][11] At 2,700 kilometres (1,700 mi) in diameter, it is the seventh-largest moon in the Solar System. Because of its retrograde orbit and composition similar to Pluto\'s, Triton is thought to have been a dwarf planet captured from the Kuiper belt.[12] Triton has a surface of mostly frozen nitrogen, a mostly water-ice crust,[13] an icy mantle and a substantial core of rock and metal.[6] The core makes up two-thirds of its total mass. Triton has a mean density of 2.061 grams per cubic centimetre (0.0745 lb/cu in)[5] and is composed of approximately 15–35% water ice.[6]</string>
+
+    <string name="name_nereid">Nereid</string>
+    <string name="description_nereid">Nereid is the third-largest moon of Neptune. It has a highly eccentric orbit. It was the second moon of Neptune to be discovered, by Gerard Kuiper in 1949.</string>
+
+
+
+    <string name="name_pluto">Pluto</string>
+    <string name="description_pluto">Pluto (minor-planet designation: 134340 Pluto) is a dwarf planet in the Kuiper belt, a ring of bodies beyond Neptune. It was the first Kuiper belt object to be discovered. It is the largest and second-most-massive known dwarf planet in the Solar System and the ninth-largest and tenth-most-massive known object directly orbiting the Sun. It is the largest known trans-Neptunian object by volume but is less massive than Eris, a dwarf planet in the scattered disc. Like other Kuiper belt objects, Pluto is primarily made of ice and rock[13] and is relatively small—about one-sixth the mass of the Moon and one-third its volume. It has a moderately eccentric and inclined orbit during which it ranges from 30 to 49 astronomical units or AU (4.4–7.3 billion km) from the Sun. This means that Pluto periodically comes closer to the Sun than Neptune, but a stable orbital resonance with Neptune prevents them from colliding. In 2014, Pluto was 32.6 AU from the Sun. Light from the Sun takes about 5.5 hours to reach Pluto at its average distance (39.4 AU).[14]</string>
+
+    <string name="name_charon">Charon</string>
+    <string name="description_charon">Charon, also called (134340) Pluto I,[1] is the largest of the five known moons of the dwarf planet Pluto. It was discovered in 1978 at the United States Naval Observatory in Washington, D.C., using photographic plates taken at the United States Naval Observatory Flagstaff Station (NOFS). It is a very large moon in comparison to its parent body, Pluto. Its gravitational influence is such that the barycenter of the Pluto–Charon system lies outside Pluto.</string>
+
+    <string-array name="planets">
+        <item>@string/name_all</item>
+        <item>@string/name_mercury</item>
+        <item>@string/name_venus</item>
+        <item>@string/name_earth</item>
+        <item>@string/name_mars</item>
+        <item>@string/name_jupiter</item>
+        <item>@string/name_saturn</item>
+        <item>@string/name_uranus</item>
+        <item>@string/name_neptune</item>
+        <item>@string/name_pluto</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>@string/name_all</item>
+        <item>@string/category_star</item>
+        <item>@string/category_planet</item>
+        <item>@string/category_asteroid</item>
+        <item>@string/category_commet</item>
+        <item>@string/category_dwarf_planet</item>
+    </string-array>
 </resources>

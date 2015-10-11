@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import es.shyri.materialtoolbar.MaterialPresenter;
-import es.shyri.materialtoolbar.sample.fragment.FragmentCityList;
+import es.shyri.materialtoolbar.sample.fragment.FragmentPlanetsList;
 
 
 public class MainActivity extends AppCompatActivity implements FragmentManager.OnBackStackChangedListener {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements FragmentManager.O
 
         presenter.attachActivity(this, R.id.main_toolbar, R.id.fragmentContainer);
         if (getFragmentManager().findFragmentById(R.id.fragmentContainer) == null) {
-            presenter.navigateTo(new FragmentCityList());
+            presenter.navigateTo(new FragmentPlanetsList());
         }
     }
 
