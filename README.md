@@ -132,7 +132,12 @@ And obviously override the other MaterialToolbarSupplier methods
 ```
 
 ## Download
+```gradle
 
+dependencies {
+    compile 'es.shyri:materialtoolbar:0.1.1'
+}
+```
 License
 -------
 
