@@ -33,7 +33,7 @@ ext {
     siteUrl = 'https://github.com/Shyri/MaterialToolbar'
     gitUrl = 'https://github.com/Shyri/MaterialToolbar.git'
 
-    libraryVersion = '0.1.0'
+    libraryVersion = '0.1.1'
 
     developerId = 'Shyri'
     developerName = 'Shyri Villar'
@@ -53,7 +53,7 @@ install {
         pom {
             project {
                 packaging 'aar'
-                groupId group
+                groupId publishedGroupId
                 artifactId artifact
 
                 // Add your description here
