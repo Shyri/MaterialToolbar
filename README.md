@@ -3,14 +3,6 @@ MaterialToolbar makes it easy to build a Fragment navigation based application w
 
 ![Alt text](/images/demo-portrait.gif?raw=true) ![Alt text](/images/demo-landscape.gif?raw=true)
 
-## How it works
-To do this it uses a simple MVP model with presenter class called MaterialPresenter that will handle Fragment navigation 
-inside a single Activity.
-All you got to do is to tell the MaterialPresenter which activity will hold the fragments. 
-Then wherever on the app you can call the MaterialPresenter to navigate to any Fragment.
-If this Fragments implements the MaterialToolbarSupplier interface it means that this Fragment will provide a custom Toolbar
-layout to interact with.
-
 ## Example
 The first step is to create a single Activity and attach the activity to the singleton instance of MaterialPresenter.
 First thing you got to do is to set **Theme.AppCompat.Light.NoActionBar** in your **AndroidManifest.xml** file, 
