@@ -4,7 +4,6 @@ MaterialToolbar makes it easy to build a Fragment navigation based application w
 ![Alt text](/images/demo-portrait.gif?raw=true) ![Alt text](/images/demo-landscape.gif?raw=true)
 
 ## Example
-The first step is to create a single Activity and attach the activity to the singleton instance of MaterialPresenter.
 First thing you got to do is to set **Theme.AppCompat.Light.NoActionBar** in your **AndroidManifest.xml** file, 
 and insert your MaterialToolbar instead of standard Toolbar in your activity xml layout. The layout also must to include
 a fragment container view such as this FrameLayout in which fragments will be placed
@@ -36,8 +35,8 @@ a fragment container view such as this FrameLayout in which fragments will be pl
 
 ```
 **Note that I set the animateLayoutChanges flag in order to have smooth toolbar transitions.**
-After that we can override our onCreate method of the activity to tell the MaterialPresenter instance, telling it which are 
-the layout ids of the MaterialToolbar and the fragment holder views.
+
+After that you can override the onCreate method of the activity and attach the activity instance to the presenter. You have to provide also the layout id of the MaterialToolbar and the fragment container.
 
 ```java
     @Override
@@ -58,7 +57,7 @@ the layout ids of the MaterialToolbar and the fragment holder views.
         
 ```
 
-Also for roation, other configuration changes and to avoid view leaks it is necessary to detach the activity when it is going to be destroyed
+Also for roation, other configuration changes and to avoid view leaks it is necessary to detach the activity from the presenter overriding the onDestroy() method
 
 ```java
     @Override
@@ -80,7 +79,8 @@ Finally we want to override the onBackPressed method to let the presenter handle
 
 ```
 
-In your fragment you have to implement MaterialToolbarSupplier only if you want to have your custom Toolbar layout.
+You have to implement MaterialToolbarSupplier only in the fragments that will provide custom Toolbar layout.
+In the onCreateView method you must inflate the **MaterialToolbarContent** providing a layout. Note you can have different layouts, for example one for portrait and other for landscape. Here you can also instantiate views of your **MaterialToolbarContent**
 
 
 ```java
@@ -107,7 +107,8 @@ public class MyAwesomeFragment extends Fragment implements MaterialToolbarSuppli
     }
 }
 ```
-And obviously override the other MaterialToolbarSupplier methods
+And also override the other MaterialToolbarSupplier methods, just one to get the presenter and other to return the MaterialToolbar to the presenter
+
 ```java
     @Override
     public void setPresenter(MaterialPresenter presenter) {
