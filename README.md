@@ -1,4 +1,6 @@
-# MaterialToolbar
+MaterialToolbar  [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-MaterialToolbar-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/2674)
+===============
+
 MaterialToolbar makes it easy to build a Fragment navigation based application with fully customized toolbar views.
 
 ![Alt text](/images/demo-portrait.gif?raw=true) ![Alt text](/images/demo-landscape.gif?raw=true)
